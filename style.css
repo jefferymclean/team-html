@@ -5,6 +5,7 @@ body {
 
 #team-members {
   clear: both;
+  overflow: auto;
 }
 
 #team-members .member {
@@ -14,9 +15,30 @@ body {
   padding: 6px;
 }
 
-#team-members .member img {
+#team-members .member .normal {
   width: 200px;
   height: 200px;
+  
+}
+
+#team-members .member .funky {
+  width: 200px;
+  height: 200px;
+  display: none;
+  border-radius: 75%;
+}
+
+#team-members .member:hover .normal {
+  width: 200px;
+  height: 200px;
+  display: none;
+}
+
+#team-members .member:hover .funky {
+  width: 200px;
+  height: 200px;
+  display: inline;
+  border-radius: 75%;
 }
 
 #team-members .member div.name {
