@@ -1,16 +1,16 @@
 body {
   font-family: Verdana;
-  font-size: 1.5em;
+  font-size: 15px;
 }
 
 #team-members {
   clear: both;
   overflow: auto;
+
 }
 
 #team-members .member {
   float: left;
-  /*border: 1px solid gray;*/
   margin: 10px;
   padding: 6px;
 }
@@ -22,16 +22,19 @@ body {
 }
 
 #team-members .member .funky {
+
   width: 200px;
   height: 200px;
   display: none;
   border-radius: 75%;
+
 }
 
 #team-members .member:hover .normal {
   width: 200px;
   height: 200px;
   display: none;
+   
 }
 
 #team-members .member:hover .funky {
@@ -39,8 +42,20 @@ body {
   height: 200px;
   display: inline;
   border-radius: 75%;
+  box-shadow: 10px 10px 5px blue;
+  -webkit-transform: rotate(140deg);
 }
+
+#team-members .member:hover:nth-child(2n+1) .funky {
+  width: 200px;
+  height: 200px;
+  display: inline;
+  border-radius: 75%;
+  box-shadow: 10px 10px 5px red;
+  -webkit-transform: rotate(20deg);
 
 #team-members .member div.name {
   text-align: center;  
 }
+
+
